@@ -3,6 +3,9 @@ kind: ConfigMap
 metadata:
   name: testcm
   namespace: openshift-gitops
+  labels:
+    app.kubernetes.io/name: taxi
+    app.kubernetes.io/version: 0.0.1
 data: {}
 binaryData: {}
 immutable: false
