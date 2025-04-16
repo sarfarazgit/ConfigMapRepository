@@ -3,6 +3,8 @@ kind: ConfigMap
 metadata:
   name: testcm
   namespace: openshift-gitops
+  annotations:
+   argocd.argoproj.io/tracking-id: openshift-gitops:argoproj.io/ArgoCD:openshift-gitops/openshift-gitops
   labels:
     app.kubernetes.io/name: taxi
     app.kubernetes.io/version: 0.0.1
